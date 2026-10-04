@@ -175,4 +175,11 @@ class BangumiItem {
       interest: interest,
     );
   }
+
+  /// List/grid cover. `common` is Bangumi's own ~400px rendition of the same
+  /// poster (`/r/400/...`); `large` is the original and only belongs on the
+  /// detail hero and the player artwork.
+  String get listCover => images['common']?.isNotEmpty == true
+      ? images['common']!
+      : (images['large'] ?? '');
 }

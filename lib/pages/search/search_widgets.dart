@@ -162,9 +162,7 @@ class _SearchResultCard extends StatelessWidget {
                   aspectRatio: coverAspectRatio,
                   child: LayoutBuilder(
                       builder: (_, constraints) => NetworkImgLayer(
-                            src: item.images['large'] ??
-                                item.images['common'] ??
-                                '',
+                            src: item.listCover,
                             width: constraints.maxWidth,
                             height: constraints.maxHeight,
                           )),

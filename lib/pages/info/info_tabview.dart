@@ -561,7 +561,7 @@ class _RelatedBangumiCardH extends StatelessWidget {
               return Row(
                 children: [
                   NetworkImgLayer(
-                    src: bangumiItem.images['large'] ?? '',
+                    src: bangumiItem.listCover,
                     width: imageWidth,
                     height: imageHeight,
                     origAspectRatio: posterAspectRatio,

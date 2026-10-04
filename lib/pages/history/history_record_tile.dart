@@ -56,7 +56,7 @@ class HistoryRecordTile extends StatelessWidget {
         : '在线';
     final time =
         TimeOfDay.fromDateTime(history.lastWatchTime.toLocal()).format(context);
-    final image = history.bangumiItem.images['large'] ?? '';
+    final image = history.bangumiItem.listCover;
     final position = _position;
 
     return Dismissible(

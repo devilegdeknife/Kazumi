@@ -220,7 +220,7 @@ class _DownloadEpisodeSheetState extends State<DownloadEpisodeSheet> {
         bangumiName: bangumiItem.nameCn.isNotEmpty
             ? bangumiItem.nameCn
             : bangumiItem.name,
-        bangumiCover: bangumiItem.images['large'] ?? '',
+        bangumiCover: bangumiItem.listCover,
         pluginName: plugin.name,
         episodeNumber: episodeNumber,
         episodeName: identifier,

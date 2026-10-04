@@ -68,6 +68,7 @@ class BangumiTimelineCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return Semantics(
       button: true,
       child: Card(
@@ -166,7 +167,7 @@ class BangumiTimelineCard extends StatelessWidget {
 
   Widget _buildCover(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
-    final imageUrl = bangumiItem.images['large'] ?? '';
+    final imageUrl = bangumiItem.listCover;
     return ExcludeSemantics(
       child: SizedBox(
         width: compact ? 80 : 88,

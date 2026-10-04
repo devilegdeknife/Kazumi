@@ -49,13 +49,13 @@ class BangumiCardV extends StatelessWidget {
                               NetworkImgLayer.heroFlightShuttleBuilder,
                           tag: bangumiItem.id,
                           child: NetworkImgLayer(
-                            src: bangumiItem.images['large'] ?? '',
+                            src: bangumiItem.listCover,
                             width: maxWidth,
                             height: maxHeight,
                           ),
                         )
                       : NetworkImgLayer(
-                          src: bangumiItem.images['large'] ?? '',
+                          src: bangumiItem.listCover,
                           width: maxWidth,
                           height: maxHeight,
                         );

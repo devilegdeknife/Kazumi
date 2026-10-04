@@ -254,7 +254,7 @@ class _DownloadPageState extends State<DownloadPage> {
       airDate: '',
       airWeekday: 0,
       rank: 0,
-      images: {'large': record.bangumiCover},
+      images: {'large': record.bangumiCover, 'common': record.bangumiCover},
       tags: [],
       alias: [],
       ratingScore: 0.0,

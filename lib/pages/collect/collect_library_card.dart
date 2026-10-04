@@ -343,7 +343,7 @@ class _CollectCover extends StatelessWidget {
           transitionOnUserGestures: true,
           flightShuttleBuilder: NetworkImgLayer.heroFlightShuttleBuilder,
           child: NetworkImgLayer(
-            src: item.images['large'] ?? item.images['common'] ?? '',
+            src: item.listCover,
             width: constraints.maxWidth,
             height: constraints.maxHeight,
             borderRadius: borderRadius,
